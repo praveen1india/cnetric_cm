@@ -1,0 +1,268 @@
+/* /// THIS IS A STANDARD SALESPRO TEMPLATE STYLESHEET ///
+/// IF YOU WANT TO MAKE CHANGES, PLEASE READ THIS CAREFULLY FIRST
+
+Any changes you make will be lost when you update SalesPro.
+
+So please first create a new 'colour' in /templates/[THISTEMPLATE]/colours/
+
+You can call it anything you like, e.g. 'my_custom.css'
+
+SalesPro will automatically recognise the new colour, so you can go
+to Templates > [THIS TEMPLATE] > Colours and your new colour will be available
+
+Select the new colour, and save the template.
+
+Then, make any changes you like to this new 'colour'. You can make any changes you like,
+and since the colour styleshet is loaded last, the styles you add will override the
+standard SalesPro template stylesheet.
+
+Simply ensure that you add !important; after every rule
+
+Enjoy!
+
+*/
+
+
+#moderna_breadcrumbs li a {
+    color: #000 !important;
+}
+#moderna_breadcrumbs li.moderna_active_breadcrumb {
+    color: #111111 !important;
+}
+h1#moderna_cat_title {
+    background-color:rgba(0, 0, 0, 0.7) !important;
+    color: #fff !important;
+}
+#moderna_cat_desc p {
+    color: #333 !important;
+}
+#moderna_cat_pages {
+    background: #f4f3f3 !important;
+}
+#moderna_cat_pages  a.spr_active_page {
+    background: #111;
+    color: white !important;
+}
+#moderna_cat_pages a.spr_category_sort_page:hover {
+    background: #111 !important;
+    color: #000 !important;
+}
+#moderna_cat_pages .spr_category_sort_page {
+    color: #000 !important;
+}
+#moderna_cat_pages .spr_category_sort_page:hover {
+    background-color: #111111 !important;
+}
+#moderna_cat_pages .spr_category_sort_prev {
+    background: url('../images/arrow-l.png') 5px 5px no-repeat #ccc !important;
+    color: #fff !important;
+}
+#moderna_cat_pages .spr_category_sort_next {
+    background: url('../images/arrow-r.png') 9px 5px no-repeat #ccc !important;
+    color: #fff !important;
+}
+#moderna_cat_pages .spr_category_sort_page_active {
+    color: #111111 !important;
+}
+#moderna_cat_sort {
+    background: #f4f3f3 !important;
+}
+#moderna_cat_sort label {
+    color: #000 !important;
+}
+#moderna_cat_sort li a {
+    color: #000 !important;
+}
+#moderna_cat_sort li a.sort_selected {
+    background: #111111 !important;
+    color: #fff !important;
+}
+#moderna_cat_sort li a:hover {
+    border-color: #111111 !important;
+}
+#moderna_category_items .moderna_category_box_details {
+    background: #f4f3f3 !important;
+}
+#moderna_category_items .moderna_category_box_details h3.spr_category_item_name {
+    color: #333 !important;
+}
+#moderna_category_items .moderna_category_box_details h3.spr_category_item_price {
+    color: #111111 !important;
+}
+#moderna_category_items .moderna_category_box_buy {
+    background: #111111 !important;
+    color: #fff !important;
+}
+#moderna_category_items .moderna_category_list {
+    background: #f4f3f3 !important;
+}
+#moderna_category_items .moderna_category_list_price h3 {
+    color: #111111 !important;
+}
+#moderna_category_items .moderna_category_list_button {
+    background: #111111 !important;
+    color: #fff !important;
+}
+#moderna_category_items h3.moderna_category_item_name {
+    color: #111111 !important;
+}
+#moderna_category_items .moderna_category_list_details p {
+    color: #333 !important;
+}
+#moderna_item_details h1 {
+    color: #000 !important;
+}
+
+#moderna_item_details h2 {
+    color: #999 !important;
+}
+#moderna_item_buy_price {
+    background: #f4f3f3 !important;
+}
+#moderna_item_buy_price h1#moderna_item_price {
+    color: #000 !important;
+}
+#moderna_item_buy_button input.spr_item_submit {
+    background: #111 !important;
+}
+#moderna_tabs_holder .spr_tabs li {
+    color: #333 !important;
+    background: #f4f3f3 !important;
+}
+#moderna_tabs_holder .spr_tabs li:hover {
+    color: #111111 !important;
+}
+#moderna_tabs_holder .spr_tabs li.spr_active_tab {
+    background: #111111 !important;
+    color: white !important;
+}
+#moderna_tabs_content .spr_tab {
+    border: 1px solid #111111 !important;
+    background: #f4f3f3 !important;
+}
+#moderna_tabs_content p.spr_faq_question {
+    color: #666666 !important;
+    background: url('../images/bluearrow.png') center left no-repeat !important;
+}
+#moderna_tabs_content p.moderna_faq_active {
+    background: url('../images/bluearrow-down.png') center left no-repeat !important;
+}
+#moderna_tabs_content p.spr_faq_answer {
+    color: #999999 !important;
+}
+#moderna_slider_loading_filter {
+     background-color: #000 !important;
+}
+#moderna_slider_loading_image {
+    background: url(../images/loading.gif) no-repeat center center !important;
+}
+input.mod_salespro_search_submit {
+    background: #111111 !important;
+}
+#spr_home_categories .spr_home_categories_box {
+    background: #111111 !important;
+}
+#spr_home_categories .spr_home_categories_box:hover {
+    background: #f4f3f3 !important;
+}
+#spr_home_categories h3.spr_home_categories_box_name {
+    color: #f4f3f3 !important;
+}
+#spr_home_categories .spr_home_categories_box:hover h3.spr_home_categories_box_name {
+    color: #111111 !important;
+}
+#mod_salespro_basket a.spr_basket_checkout {
+    background: #111111 !important;
+}
+#mod_salespro_basket a.spr_basket_checkout:after {
+    background: #111111 !important;
+}
+#salespro .spr_checkout_submit, #salespro .spr_checkout_submit:hover {
+    background: #111111 !important;
+}
+
+#salespro .spr_checkout_submit:after {
+    background: #111111 !important;
+}
+#salespro .spr_checkout_submit:after {
+    background: #111111 !important;
+}
+
+
+
+
+/* /// WIDGETS /// */
+
+/* /// IMPORTANT - THESE STYLES AFFECT THE COLOURS AND
+/* /// BACKGROUNDS OF WIDGETS ONLY. THE STRUCTURE IS SET
+/* /// UP IN /RESOURCES/CSS/STYLESHEET.CSS
+/* /// YOU CAN OVERRIDE THE WIDGET STRUCTURE IN YOUR
+/* /// CUSTOM COLOUR CSS FILE AS NORMAL */
+
+
+/* SHOWCASE WIDGET COLOURS */
+
+#salespro .spr_widget_showcase_item_cell {
+    background: #ffffff;
+}
+#salespro .spr_widget_showcase_item_price {
+    color: #111111;
+}
+
+#salespro .spr_widget_showcase_item_name {
+    color: #333;
+}
+
+/* /// CATEGORY CELL WIDGET /// */
+#salespro .spr_widget_category_name {
+    color: #F4F3F3;
+    background: #111111;
+}
+
+#salespro .spr_widget_category_cell:hover .spr_widget_category_name {
+    color: #fff;
+    background: #666;
+}
+
+/* /// ITEM CELL WIDGET /// */
+#salespro .spr_widget_item_details {
+    background: #f4f3f3;
+}
+#salespro .spr_widget_item_link_holder {
+    background: #111111;
+}
+#salespro .spr_widget_item_link {
+    color: #fff;
+}
+#salespro .spr_widget_item_name {
+    color: #333;
+}
+#salespro .spr_widget_item_price {
+    color: #111111;
+}
+#salespro .spr_widget_item_cell:hover .spr_widget_item_link_holder, #salespro .spr_widget_item_cell:hover .spr_widget_item_link {
+    background: #666;
+}
+
+/* /// CATEGORY LIST VIEW /// */
+#salespro .spr_widget_listitem {
+    background: #f4f3f3;
+}
+
+#salespro .spr_widget_listitem_name {
+    color: #333;
+}
+#salespro .spr_widget_listitem_desc {
+    color: #333;
+}
+
+#salespro .spr_widget_listitem_price {
+    color: #111;
+}
+#salespro .spr_widget_listitem_button {
+    background: #111;
+    color: #fff;
+}
+#salespro .spr_widget_listitem:hover .spr_widget_listitem_button {
+    background: #666;
+}

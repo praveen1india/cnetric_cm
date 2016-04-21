@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="3.0" method="upgrade">
+	<name>SalesPro Package</name>
+    <author>Barnaby V. Dixon</author>
+	<creationDate>26th June 2014</creationDate>
+    <packagename>salespro</packagename>
+	<version>1.1.1</version>
+	<license>GNU/GPL</license>
+	<url>http://www.sales-pro.co.uk</url>
+	<packager>SalesPro</packager>
+	<packagerurl>http://www.sales-pro.co.uk</packagerurl>
+	<description><![CDATA[<style>#spr_button { padding: 10px 20px; border: 1px solid #ccc; border-radius: 4px; background: #a9db80; background: -moz-linear-gradient(top,  #a9db80 0%, #96c56f 100%); background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a9db80), color-stop(100%,#96c56f)); background: -webkit-linear-gradient(top,  #a9db80 0%,#96c56f 100%); background: -o-linear-gradient(top,  #a9db80 0%,#96c56f 100%); background: -ms-linear-gradient(top,  #a9db80 0%,#96c56f 100%); background: linear-gradient(to bottom,  #a9db80 0%,#96c56f 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a9db80', endColorstr='#96c56f',GradientType=0 ); color: #fff; } #spr_install { background: #f9f9f9; padding: 20px 20px 0 20px; margin-bottom: 20px; border-radius: 2px; } p, li, ul, h1, img { text-align:left; }</style><div id='spr_install'><img src="components/com_salespro/resources/images/salespro.png" alt="SalesPro logo" /><h1>Welcome to SalesPro!</h1><p>SalesPro is a powerful e-commerce solution for Joomla 3</p><p><strong>Features:</strong></p><ul><li>Create unlimited product pages!</li><li>Add unlimited currency options!</li><li>Sell to anywhere in the world!</li><li>Full PayPal integration!</li><li>Add product options!</li><li>Fantastic stock management!</li><li>Add videos to your product pages!</li><li>Add FAQs to your product pages!</li><li>Full SEO capabilities - title/keywords/description!</li><li>Define unlimited regions, countries and states!</li><li>Create multiple shipping methods based on rules!</li><li>Easy template creation and integration!</li></ul><p style='overflow: auto; clear: both; margin: 12px 0; padding: 20px 0;'><a id="spr_button" href='index.php?option=com_salespro'>Start here</a></p></div>]]></description>
+	<files>
+		<file type="module" id="mod_salespro_search" client="site">mod_salespro_search.zip</file>
+        <file type="module" id="mod_salespro_menu" client="site">mod_salespro_menu.zip</file>
+        <file type="module" id="mod_salespro_basket" client="site">mod_salespro_basket.zip</file>
+        <file type="module" id="mod_salespro_categories" client="site">mod_salespro_categories.zip</file>
+        <file type="plugin" id="plg_salespro" folder="system">plg_salespro.zip</file>
+        <file type="component" id="com_salespro">com_salespro.zip</file>
+	</files>
+    <updateservers>
+        <server type="extension" name="SalesPro Update"><![CDATA[http://www.sales-pro.co.uk/index.php?option=com_ars&view=update&task=stream&format=xml&id=1&dummy=extension.xml]]></server>
+    </updateservers>
+</extension>

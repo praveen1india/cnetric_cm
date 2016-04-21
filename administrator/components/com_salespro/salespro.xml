@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5" method="upgrade">
+	<name>COM_SALESPRO</name>
+	<creationDate>16th March 2015</creationDate>
+	<author>Barnaby V. Dixon</author>
+	<authorEmail>admin@php-web-design.com</authorEmail>
+	<authorUrl>http://www.php-web-design.com</authorUrl>
+	<copyright>(C) 2013 Barnaby V. Dixon All rights reserved.</copyright>
+	<version>1.1.1</version>
+	<license>GNU/GPL</license>
+    <scriptfile>script.php</scriptfile>
+    <uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<files folder="frontend">
+		<folder>images</folder>
+		<folder>resources</folder>
+		<folder>templates</folder>
+        <folder>language</folder>
+		<folder>views</folder>
+		<filename>controller.php</filename>
+        <filename>router.php</filename>
+		<filename>salespro.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages folder="frontend">
+        <language tag="de-DE">language/de-DE/de-DE.com_salespro.ini</language>
+        <language tag="en-GB">language/en-GB/en-GB.com_salespro.ini</language>
+        <language tag="es-ES">language/es-ES/es-ES.com_salespro.ini</language>
+        <language tag="fr-FR">language/fr-FR/fr-FR.com_salespro.ini</language>
+        <language tag="it-IT">language/it-IT/it-IT.com_salespro.ini</language>
+    </languages>
+	<administration>
+		<menu img="components/com_salespro/resources/images/spro_16x16.png">COM_SALESPRO</menu>
+		<files folder="admin">
+            <folder>classes</folder>
+            <folder>controllers</folder>
+            <folder>language</folder>
+            <folder>lib</folder>
+            <folder>models</folder>
+			<folder>resources</folder>
+            <folder>sql</folder>
+            <folder>tmp</folder>
+            <folder>views</folder>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>salespro.crt</filename>
+            <filename>salespro.pdf</filename>
+            <filename>salespro.php</filename>
+		</files>
+		<languages folder="admin">
+			<language tag="de-DE">language/de-DE/de-DE.com_salespro.sys.ini</language>
+            <language tag="de-DE">language/de-DE/de-DE.com_salespro.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_salespro.sys.ini</language>
+            <language tag="en-GB">language/en-GB/en-GB.com_salespro.ini</language>
+            <language tag="es-ES">language/es-ES/es-ES.com_salespro.sys.ini</language>
+            <language tag="es-ES">language/es-ES/es-ES.com_salespro.ini</language>
+            <language tag="fr-FR">language/fr-FR/fr-FR.com_salespro.sys.ini</language>
+            <language tag="fr-FR">language/fr-FR/fr-FR.com_salespro.ini</language>
+            <language tag="it-IT">language/it-IT/it-IT.com_salespro.sys.ini</language>
+            <language tag="it-IT">language/it-IT/it-IT.com_salespro.ini</language>
+		</languages>
+	</administration>
+</extension>

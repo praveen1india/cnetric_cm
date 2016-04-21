@@ -1,0 +1,392 @@
+/* /// THIS IS A STANDARD SALESPRO TEMPLATE STYLESHEET ///
+/// IF YOU WANT TO MAKE CHANGES, PLEASE READ THIS CAREFULLY FIRST
+
+Any changes you make will be lost when you update SalesPro.
+
+So please first create a new 'colour' in /templates/[THISTEMPLATE]/colours/
+
+You can call it anything you like, e.g. 'my_custom.css'
+
+SalesPro will automatically recognise the new colour, so you can go
+to Templates > [THIS TEMPLATE] > Colours and your new colour will be available
+
+Select the new colour, and save the template.
+
+Then, make any changes you like to this new 'colour'. You can make any changes you like,
+and since the colour styleshet is loaded last, the styles you add will override the
+standard SalesPro template stylesheet.
+
+Simply ensure that you add !important; after every rule
+
+Enjoy!
+
+*/
+
+#salespro div, #salespro ul, #salespro li {
+    box-sizing: content-box;
+}
+
+#salespro .spr_widget_showcase_item_cell {
+    box-shadow: 0 0 2px 2px #ccc;
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+    clear: both;
+    border-radius: 4px;
+    background: #ffffff;
+    min-width: 400px !important;
+}
+#salespro .spr_widget_tint {
+    background-image:url('images/trans.png');    
+    position: relative;
+    height: 280px;
+    width: 45%;
+    margin: 10px;
+    border-radius: 2px;
+    z-index: 3;
+}
+
+#salespro .spr_widget_showcase_item_details {
+    position: absolute;
+    height: 280px;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+#salespro .spr_widget_showcase_item_img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    text-align: left;
+}
+#salespro .spr_widget_showcase_item_img:after{
+    background: none repeat scroll 0 0 #f00;
+    content: " ";
+    display: inline-block;
+    height: 300px;
+    vertical-align: middle;
+    width: 0;
+  }
+
+#salespro .spr_widget_showcase_item_img img {
+    width: auto;
+    max-width: none !important;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    float: right;
+}
+
+#salespro .spr_widget_showcase_item_details .spr_widget_item_link_holder {
+    float: right !important;
+    height: 40px !important;
+}
+
+#salespro .spr_widget_showcase_item_details .spr_widget_item_link {
+    margin: 10px !important;
+}
+
+#salespro .spr_widget_showcase_item_link {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#salespro .spr_widget_showcase_item_price {
+    margin: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    color: #c12200;
+}
+
+#salespro .spr_widget_showcase_item_desc {
+    width: 100%;
+    height: 200px;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    font-weight: normal;
+    overflow: hidden;
+}
+
+#salespro .spr_widget_showcase_item_name {
+    width: 100%;
+    height: 20px;
+    clear: both;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #333;
+}
+
+#salespro .spr_widget_item_link_holder:hover .spr_widget_item_link {
+    text-decoration: underline;
+}
+
+/* /// CATEGORY GRID WIDGET /// */
+#salespro .spr_widget_category_grid_container {
+    margin: 0 -10px;
+}
+#salespro .spr_widget_category_grid {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%;
+}
+#salespro .spr_widget_category_grid_row {
+    display: table-row;
+}
+
+/* /// CATEGORY CELL WIDGET /// */
+#salespro .spr_widget_category_cell {
+    display:table-cell;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    padding-bottom: 42px;
+}
+#salespro .spr_widget_category_empty_cell {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#salespro .spr_widget_category_img {
+    width: 100%;
+}
+#salespro .spr_widget_category_img img {
+    width: inherit;
+}
+#salespro .spr_widget_category_name {
+    margin:0;
+    width: 100%;
+    height: 22px;
+    padding: 10px;
+    clear: both;
+    overflow: hidden;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: normal;
+    color: #F4F3F3;
+    background: #c12200;
+    position: absolute;
+    bottom: 0;
+}
+
+#salespro .spr_widget_category_cell a:hover {
+    text-decoration: none !important;
+}
+
+#salespro .spr_widget_category_cell:hover .spr_widget_category_name {
+    text-decoration: none !important;
+    color: #fff;
+    background: #e00;
+}
+#salespro .spr_widget_category_cell:hover {
+    box-shadow: 0 0 4px 1px #666;
+}
+
+/*/// ITEM GRID WIDGET /// */
+
+#salespro .spr_widget_item_grid_container {
+    margin: 0 -10px;
+}
+#salespro .spr_widget_item_grid {
+    display: table;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px;
+    line-height: 0;
+}
+#salespro .spr_widget_item_grid_row {
+    display: table-row;
+}
+
+/* /// ITEM CELL WIDGET /// */
+#salespro .spr_widget_item_cell {
+    display:table-cell;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+}
+#salespro .spr_widget_item_empty_cell {
+    display: inline-block;
+    overflow: hidden;
+}
+#salespro .spr_widget_item_img {
+    width: 100%;
+}
+#salespro .spr_widget_item_img img {
+    width: inherit;
+}
+#salespro .spr_widget_item_details {
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    background: #f4f3f3;
+}
+#salespro .spr_widget_item_link_holder {
+    background: #c12200;
+    position: absolute;
+    right: 0;
+    height: inherit;
+    width: auto;
+    top: 0;
+}
+#salespro .spr_widget_item_link {
+    font-size: 14px;
+    font-family: Helvetica, Arial,sans-serif;
+    font-weight: bold;
+    color: #fff;
+    margin: 25px 10px;
+    text-align: center;
+}
+#salespro .spr_widget_item_name {
+    margin:0;
+    width: 100%;
+    height: 16px;
+    clear: both;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #333;
+    padding: 5px 0 0 10px;
+}
+#salespro .spr_widget_item_price {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    color: #333;
+    padding: 5px 0 10px 10px;
+    color: #c12200;
+    font-weight: bold;
+}
+
+#salespro .spr_widget_item_cell a:hover {
+    text-decoration: none;
+}
+
+#salespro .spr_widget_item_cell:hover .spr_widget_item_link_holder, #salespro .spr_widget_item_cell:hover .spr_widget_item_link {
+    background: #e00;
+    text-decoration: underline;
+}
+#salespro .spr_widget_item_cell:hover {
+    box-shadow: 0 0 4px 1px #666;
+}
+
+/* /// LIST ITEM VIEWS /// */
+
+/* /// CATEGORY LIST VIEW /// */
+#salespro .spr_widget_listitem {
+    clear: both;
+    overflow: visible;
+    height: 135px;
+    margin: 0 0 0 0;
+    border-radius: 0;
+    overflow: hidden;
+    background: #f4f3f3;
+    border-bottom: 1px dotted #ccc;
+}
+
+#salespro .spr_widget_listitem_img {
+    height: 135px;
+    float: left;
+    margin: 0 15px 0 0;
+    text-align: center;
+    width: 135px;
+    display: inline-block;
+}
+
+#salespro .spr_widget_listitem_img img {
+    height: inherit;
+    width: inherit;
+}
+
+#salespro .spr_widget_listitem_details {
+    overflow: hidden;
+    width: 100px;
+    height: 135px;
+    float: right;
+    margin: 0 0 0 10px;
+    padding: 0 0 0 0;
+    position: relative;
+}
+
+#salespro .spr_widget_listitem_info {
+   margin: 0 110px;
+   padding: 10px 0 0 0;
+}
+
+#salespro .spr_widget_listitem_name {
+    font-family: Helvetica, Arial,Verdana,sans-serif;
+    font-size: 16px;
+    color: #c12200;
+    margin: 0 0 5px 0;
+    padding: 0 0 0 0;
+    line-height: 16px;
+}
+#salespro .spr_widget_listitem_desc {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    line-height: 14px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    max-height: 100px;
+    overflow: hidden;
+}
+
+#salespro .spr_widget_listitem_price {
+    padding: 10px 0;
+    margin: 0;
+    font-family: Helvetica, Arial,Verdana,sans-serif;
+    font-size: 16px;
+    height: 20px;
+    line-height: 16px;
+    color: #c12200;
+    text-align: center;
+}
+#salespro .spr_widget_listitem_button {
+    background: #c12200;
+    color: #fff;
+    text-align: center;
+    padding: 12px 0;
+    height: 20px;
+    line-height: normal;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    width: inherit;
+}
+
+#salespro .spr_widget_listitem a {
+    text-decoration: none;
+    display: block;
+    overflow: auto;
+    clear: both;
+}
+#salespro .spr_widget_listitem:hover .spr_widget_listitem_button {
+    text-decoration: underline;
+    background: #f00;
+}
+#salespro .spr_widget_listitem:hover  {
+    background: #f9f9f9;
+}

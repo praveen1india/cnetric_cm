@@ -1,0 +1,1 @@
+ALTER TABLE `#__spr_sales_items` ADD `image` VARCHAR(100) NOT NULL AFTER `sku`;
