@@ -124,9 +124,21 @@ class Wcs_pimControllerImport extends JControllerAdmin
 					$query ="Select * from catgroup where identifier = '$idfer'";
 					$db->setQuery($query);
 					$results = $db->loadObject();
-
+					//print_r($results);
 					if($results)
 					{
+//						echo "yes";
+
+						//Check the catgrpdesc Table If data avilable USing LangId
+						$db 		= JFactory::getDbo();
+						$idfer		=$data['11'];
+						$query	 	="Select * from catgrpdesc where language_id = '$idfer'";
+						$db->setQuery($query);
+						$results 	= $db->loadObject();
+
+						//print_r($results);
+
+						if(!$results){
 						//Insert into CatgroupDescrip Table
 
 						$CatgroupDes = new stdClass();
@@ -152,9 +164,11 @@ class Wcs_pimControllerImport extends JControllerAdmin
 						$result = JFactory::getDbo()->insertObject('cattogrp', $CAtoGrp);
 
 						//Insert into CattoGrp Table (cattogrp)
+						}
 					}
 					else
 					{
+//						echo "No";
 						/****** New Insrtion *******/
 						//Insert into Catgroup Table
 						$db = JFactory::getDbo();
@@ -198,11 +212,14 @@ class Wcs_pimControllerImport extends JControllerAdmin
 						//Insert into CatgroupGRPREL Table (catgrprel)
 						if($data['1'] != 'TRUE')
 						{
+//						echo "Tru";
 						//Selct Parent Id
 						$db = JFactory::getDbo();
-						$query ="Select * from catgroup where identifier = ".$data['2'];
+						$Par_idfr	=	$data['2'];
+						$query ="Select * from catgroup where identifier = '$Par_idfr'";
 						$db->setQuery($query);
 						$results = $db->loadObject();
+						//print_r($results);
 
 						$CAtoGrpRel = new stdClass();
 						$CAtoGrpRel->catgroup_id_parent		= $results->catgroup_id;
@@ -211,11 +228,10 @@ class Wcs_pimControllerImport extends JControllerAdmin
 
 						$result = JFactory::getDbo()->insertObject('catgrprel', $CAtoGrpRel);
 						}
-						//Insert into CatgroupGRPREL Table (catgrprel)
+						//Insert into CatgroupGRPREL Table (catgrprel)*/
 
 					}
-
-//					print_r($data);
+					print_r($data);
 				}
 			}
 
@@ -225,7 +241,7 @@ class Wcs_pimControllerImport extends JControllerAdmin
 		  echo "End"; exit;
 	 	  $mainframe = JFactory::getApplication();
 		  $url ="index.php?option=com_wcs_pim&view=import";
-		  $mainframe->redirect($url, $msg='Saved sucessfully.', $msgType='message');
+		  $mainframe->redirect($url, $msg='Impored sucessfully.', $msgType='message');
 	}
 
 }
