@@ -14,13 +14,8 @@ class JConfig {
 	public $dbtype = 'mysqli';
 	public $host = 'localhost';
 	public $user = 'root';
-<<<<<<< HEAD
-	public $password = '';
-	public $db = 'jshop';
-=======
 	public $password = 'eskWEB';
 	public $db = 'cnetric_cm';
->>>>>>> 4f476aace335a435fbd87b0eb06e045b037cca7d
 	public $dbprefix = 'ucs_';
 	public $live_site = '';
 	public $secret = 'UrU8imBgnfG7kMH5';
@@ -36,11 +31,7 @@ class JConfig {
 	public $offset = 'UTC';
 	public $mailonline = '1';
 	public $mailer = 'mail';
-<<<<<<< HEAD
-	public $mailfrom = 'praveenj@cnetric.com';
-=======
 	public $mailfrom = 'ravi@cnetric.com';
->>>>>>> 4f476aace335a435fbd87b0eb06e045b037cca7d
 	public $fromname = 'UCS-Cloud';
 	public $sendmail = '/usr/sbin/sendmail';
 	public $smtpauth = '0';
@@ -63,13 +54,8 @@ class JConfig {
 	public $sef_suffix = '0';
 	public $unicodeslugs = '0';
 	public $feed_limit = '10';
-<<<<<<< HEAD
-	public $log_path = 'C:\\xampp\\htdocs\\projects_c\\jshop/logs';
-	public $tmp_path = 'C:\\xampp\\htdocs\\projects_c\\jshop/tmp';
-=======
 	public $log_path = 'C:\\xampp\\htdocs\\ccm/logs';
 	public $tmp_path = 'C:\\xampp\\htdocs\\ccm/tmp';
->>>>>>> 4f476aace335a435fbd87b0eb06e045b037cca7d
 	public $lifetime = '150';
 	public $session_handler = 'database';
 	public $memcache_persist = '1';
