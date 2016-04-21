@@ -1,0 +1,1 @@
+ALTER TABLE `#__spr_addons` ADD `version` FLOAT(10) NOT NULL ;

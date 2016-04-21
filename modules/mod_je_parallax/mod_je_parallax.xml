@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.3" type="module" client="site" method="upgrade">
+	<name>JE Parallax Slideshow</name> 
+    <version>3.4</version>
+    <creationDate>February, 2015</creationDate>
+    <author>jExtensions.com</author>
+    <authorEmail>support@jExtensions.com</authorEmail>
+    <authorUrl>http://jExtensions.com</authorUrl>
+    <copyright>Copyright 2015 - jExtensions.com</copyright>
+    <license>GNU/GPL</license>
+	<description><![CDATA[
+	<h1 class="sub-heading">JE Parallax - Content Slideshow</h1>	
+	<div class="description">Download more free extensions from <a href="http://jextensions.com/" target="_blank">jExtensions.com</a><br/>
+	Need help? <a href="http://jextensions.com/parallax-content-slider-joomla-2.5/" target="_blank">Click here to visit the support page</a>.<br/>
+	<span class="credits">Credits: <a href="http://tympanus.net/codrops/2012/03/15/parallax-content-slider-with-css3-and-jquery/" target="_blank" >Parallax</a></span>
+	</div>
+		]]>
+	</description>
+
+	<files>
+		<filename module="mod_je_parallax">mod_je_parallax.php</filename>
+		<filename>index.html</filename>
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>php</folder>
+	</files>
+
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_je_parallax/php">
+		<fieldset name="basic">
+			<field name="jQuery" type="list" default="0" label="jQuery" description="Enable or Disable the latest jQuery version. Make sure that jQuery is loaded only once on your website.">
+				<option value="0">Disable</option>
+				<option	value="1">Enable</option>
+			</field>
+
+			<field name="parallaxStyle" type="list" default="1" label="Color Styles" description="Choose color and pattern style.">
+				<option value="1">Style 1</option>
+				<option value="2">Style 2</option>
+				<option value="3">Style 3</option>
+				<option value="4">Style 4</option>
+				<option value="5">Style 5</option>
+				<option value="6">Style 6</option>
+				<option value="7">Style 7</option>
+				<option value="8">Style 8</option>
+				<option value="9">Style 9</option>
+				<option value="10">Style 10</option>
+			</field>
+
+			<field name="imgHeight" type="text" default="400" label="Slideshow Height" description="Height of slideshow in pixels." />		
+			<field name="fontStyle" type="text" default="Open+Sans" label="Google Font Style" description="" />	
+
+			<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Parallax Config&lt;/div&gt;" />
+			
+			<field name="BgPosition" type="text" default="100" label="Background Position" description="Increment the bg position (parallax effect) when sliding." />	
+			<field name="Autoplay" type="list" default="true" label="Autoplay" description="Slideshow autoplay on / off.">
+				<option value="true">Yes</option>
+				<option value="false">No</option>
+			</field>		
+			<field name="Interval" type="text" default="4000" label="Slide Interval" description="Time between transitions." />
+			
+			<field type="asset" />
+		</fieldset>
+			
+		<fieldset name="slides" label="&gt;&gt;&gt; Manage Slides &lt;&lt;&lt;">	
+	
+		<!-- SLIDE 1 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #1&lt;/div&gt;" />
+		<field name="Image1" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title1" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text1" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link1" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT1" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 2 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #2&lt;/div&gt;" />
+		<field name="Image2" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title2" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text2" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link2" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT2" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 3 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #3&lt;/div&gt;" />
+		<field name="Image3" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title3" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text3" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link3" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT3" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 4 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #4&lt;/div&gt;" />
+		<field name="Image4" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title4" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text4" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link4" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT4" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 5 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #5&lt;/div&gt;" />
+		<field name="Image5" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title5" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text5" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link5" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT5" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 6 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #6&lt;/div&gt;" />
+		<field name="Image6" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title6" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text6" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link6" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT6" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 7 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #7&lt;/div&gt;" />
+		<field name="Image7" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title7" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text7" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link7" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT7" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 8 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #8&lt;/div&gt;" />
+		<field name="Image8" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title8" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text8" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link8" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT8" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 9 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #9&lt;/div&gt;" />
+		<field name="Image9" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title9" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text9" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link9" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT9" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 10 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #10&lt;/div&gt;" />
+		<field name="Image10" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title10" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text10" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link10" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT10" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 11 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #11&lt;/div&gt;" />
+		<field name="Image11" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title11" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text11" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link11" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT11" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 12 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #12&lt;/div&gt;" />
+		<field name="Image12" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title12" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text12" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+
+		<field name="Link12" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT12" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 13 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #13&lt;/div&gt;" />
+		<field name="Image13" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title13" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text13" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link13" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT13" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 14 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #14&lt;/div&gt;" />
+		<field name="Image14" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title14" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text14" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link14" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT14" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 15 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #15&lt;/div&gt;" />
+		<field name="Image15" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title15" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text15" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link15" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT15" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 16 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #16&lt;/div&gt;" />
+		<field name="Image16" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title16" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text16" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link16" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT16" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 17 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #17&lt;/div&gt;" />
+		<field name="Image17" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title17" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text17" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link17" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT17" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 18 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #18&lt;/div&gt;" />
+		<field name="Image18" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title18" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text18" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link18" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT18" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 19 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #19&lt;/div&gt;" />
+		<field name="Image19" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title19" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text19" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link19" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT19" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />	
+		
+
+		<!-- SLIDE 20 -->
+		<field type="spacer" name="&lt;div class=&quot;sub-heading&quot;&gt;Slide #20&lt;/div&gt;" />
+		<field name="Image20" label="Slide Image" type="media"  description="Choose an image." />
+		<field name="Title20" label="Slide Title" type="text"  description="Add slide title here." />
+		<field name="Text20" label="Slide Text" type="textarea" filter="safehtml"  cols="30" rows="5" default="" description="Add slide text here. HTML allowed." />
+		<field name="Link20" label="ReadMore Url" type="text"  description="Read more link URL." />
+		<field name="LinkT20" label="ReadMore Text" type="text"  description="Read more link text. Leave blank for default read more text." />
+		
+		</fieldset>	
+	</fields>
+	</config>
+</extension>

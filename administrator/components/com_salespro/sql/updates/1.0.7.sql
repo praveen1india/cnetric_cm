@@ -1,0 +1,1 @@
+ALTER TABLE `#__spr_sales` CHANGE `length` `depth` FLOAT NOT NULL;

@@ -1,0 +1,352 @@
+#moderna_breadcrumbs li a {
+    color: #999 !important;
+}
+#moderna_breadcrumbs li.moderna_active_breadcrumb {
+    color: #ccc !important;
+}
+h1#moderna_cat_title {
+    background-color:rgba(0, 0, 0, 0.7) !important;
+    color: #fff !important;
+}
+#moderna_cat_desc p {
+    color: #999 !important;
+}
+#moderna_cat_pages {
+    background: #000 !important;
+    border: 0px !important;
+}
+#moderna_cat_pages  a.spr_active_page {
+    background: #660000;
+    color: white !important;
+}
+#moderna_cat_pages a.spr_category_sort_page:hover {
+    background: #660000 !important;
+    color: #000 !important;
+}
+#moderna_cat_pages .spr_category_sort_page {
+    color: #999 !important;
+}
+#moderna_cat_pages .spr_category_sort_page:hover {
+    background-color: #660000 !important;
+}
+#moderna_cat_pages .spr_category_sort_prev {
+    background: url('../images/arrow-l.png') 5px 5px no-repeat #ccc !important;
+    color: #fff !important;
+}
+#moderna_cat_pages .spr_category_sort_next {
+    background: url('../images/arrow-r.png') 9px 5px no-repeat #ccc !important;
+    color: #fff !important;
+}
+#moderna_cat_pages .spr_category_sort_page_active {
+    color: #660000 !important;
+}
+#moderna_cat_sort {
+    background: #000 !important;
+}
+#moderna_cat_sort label {
+    color: #999 !important;
+}
+#moderna_cat_sort li a {
+    color: #999 !important;
+}
+#moderna_cat_sort li a.sort_selected {
+    background: #660000 !important;
+    color: #fff !important;
+}
+
+#salespro h3 {
+    border: 0 none !important;
+    color: #999 !important;
+    font: 18px/22px Helvetica,Arial,sans-serif normal !important;
+    margin: 0 !important;
+    text-align: left !important;
+}
+
+.spr_dl_link {
+    border-radius: 4px;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+
+#moderna_cat_sort li a:hover {
+    border-color: #660000 !important;
+}
+#moderna_category_items .moderna_category_box_details {
+    background: #000 !important;
+}
+#moderna_category_items .moderna_category_box_details h3.spr_category_item_name {
+    color: #999 !important;
+}
+#moderna_category_items .moderna_category_box_details h3.spr_category_item_price {
+    color: #660000 !important;
+}
+#moderna_category_items .moderna_category_box_buy {
+    background: #660000 !important;
+    color: #999 !important;
+}
+#moderna_category_items .moderna_category_list {
+    background: #f4f3f3 !important;
+}
+#moderna_category_items .moderna_category_list_price h3 {
+    color: #660000 !important;
+}
+#moderna_category_items .moderna_category_list_button {
+    background: #660000 !important;
+    color: #fff !important;
+}
+#moderna_category_items h3.moderna_category_item_name {
+    color: #660000 !important;
+}
+#moderna_category_items .moderna_category_list_details p {
+    color: #333 !important;
+}
+#moderna_item_details h1 {
+    color: #999 !important;
+}
+
+#moderna_item_details h2 {
+    color: #999 !important;
+}
+#moderna_item_buy_price {
+    background: #000 !important;
+    border: 0px !important;
+}
+#moderna_item_buy_price h1#moderna_item_price {
+    color: #999 !important;
+}
+#moderna_item_buy_price .moderna_item_buy_button input.spr_item_submit {
+    background: #660000 !important;
+    color: #999 !important;
+}
+#moderna_tabs_holder ul.spr_tabs li {
+    color: #333 !important;
+    background: #666 !important;
+}
+#moderna_tabs_holder ul.spr_tabs li:hover {
+    color: #660000 !important;
+}
+#moderna_tabs_holder ul.spr_tabs li.spr_active_tab {
+    background: #000 !important;
+    color: #999 !important;
+}
+#moderna_tabs_content .spr_tab {
+    border: 1px solid #000 !important;
+    background: #000 !important;
+}
+#moderna_tabs_content p.spr_faq_question {
+    color: #666666 !important !important;
+    background: url('../images/redarrow.png') center left no-repeat !important;
+}
+#moderna_tabs_content p.moderna_faq_active {
+    background: url('../images/redarrow-down.png') center left no-repeat !important;
+}
+#moderna_tabs_content p.spr_faq_answer {
+    color: #999999 !important !important;
+}
+#moderna_slider_loading_filter {
+     background-color: #000 !important;
+}
+#moderna_slider_loading_image {
+    background: url(../images/loading.gif) no-repeat center center !important;
+}
+#spr_home_categories .spr_home_categories_box {
+    background: #000 !important;
+}
+
+#spr_home_categories .spr_home_categories_box:hover {
+    background: #660000 !important;
+}
+
+#spr_home_categories h3.spr_home_categories_box_name {
+    color: #999 !important;
+}
+
+#spr_home_categories .spr_home_categories_box:hover h3.spr_home_categories_box_name {
+    color: #000 !important;
+}
+#salespro h1 {
+    color: #999 !important;
+}
+#salespro p {
+    color: #999 !important;
+}  
+#moderna_tabs_holder ul.spr_tabs li {
+    border: 0px solid #000 !important;
+}
+#moderna_item_buy_button input.spr_item_submit {
+    background: none repeat scroll 0 0 #660000 !important;
+    border: 0 none !important;
+    border-radius: 0 !important;
+    color: #999 !important;
+}
+#salespro .spr_basket_item {
+    background: none repeat scroll 0 0 #000 !important;
+    border-bottom: 1px dotted #999 !important;
+    border-top: 1px solid #999 !important;
+}
+
+#salespro a.spr_checkout_submit {
+
+    background: #660000 !important;
+    background: -moz-linear-gradient(top,  #660000 0%, #990000 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#660000), color-stop(100%,#990000)) !important;
+    background: -webkit-linear-gradient(top,  #660000 0%,#990000 100%) !important;
+    background: -o-linear-gradient(top,  #660000 0%,#990000 100%) !important;
+    background: -ms-linear-gradient(top,  #660000 0%,#990000 100%) !important;
+    background: linear-gradient(to bottom,  #660000 0%,#990000 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#660000', endColorstr='#990000',GradientType=0 ) !important;
+    color: #ccc !important;
+
+}
+
+#salespro a.spr_checkout_submit:after {
+    background-image: -webkit-gradient(linear, left top, #eee, #c6c6c6) !important;
+    background-image: -webkit-linear-gradient(left top, #eee, #c6c6c6) !important;
+    background-image: -moz-linear-gradient(left top, #eee, #c6c6c6) !important;
+    background-image: -ms-linear-gradient(left top, #eee, #c6c6c6) !important;
+    background-image: -o-linear-gradient(left top, #eee, #c6c6c6) !important;
+    background-image: linear-gradient(left top, #eee, #c6c6c6) !important;
+}
+
+
+#salespro a.spr_checkout_submit:hover {
+    background: #660000 !important;
+    background: -moz-linear-gradient(top,  #660000 0%, #aa0000 100%) !important;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#660000), color-stop(100%,#aa0000)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #660000 0%,#aa0000 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #660000 0%,#aa0000 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #660000 0%,#aa0000 100%) !important; /* IE10+ */
+    background: linear-gradient(to bottom,  #660000 0%,#aa0000 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#660000', endColorstr='#aa0000',GradientType=0 ) !important; /* IE6-9 */
+    color: #ccc !important;
+}
+.spr_field label {
+    color: #999 !important;
+}
+
+#salespro .checkout_step h3 {
+    color: #999 !important;
+}
+#salespro a.spr_checkout_submit:after {
+    background: #ffaf4b !important;
+    background: -moz-linear-gradient(-45deg,  #660000 0%, #990000 100%) !important;
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#660000), color-stop(100%,#990000)) !important;
+    background: -webkit-linear-gradient(-45deg,  #660000 0%,#990000 100%) !important;
+    background: -o-linear-gradient(-45deg,  #660000 0%,#990000 100%) !important;
+    background: -ms-linear-gradient(-45deg,  #660000 0%,#990000 100%) !important;
+    background: linear-gradient(135deg,  #660000 0%,#990000 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#660000', endColorstr='#990000',GradientType=1 ) !important;
+}
+
+
+#salespro a.spr_checkout_submit:hover:after {
+    background: #ffa84c !important;
+    background: -moz-linear-gradient(-45deg,  #660000 0%, #aa0000 100%) !important; /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#660000), color-stop(100%,#aa0000)) !important; /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg,  #660000 0%,#aa0000 100%) !important; /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg,  #660000 0%,#aa0000 100%) !important; /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg,  #660000 0%,#aa0000 100%) !important; /* IE10+ */
+    background: linear-gradient(135deg,  #660000 0%,#aa0000 100%) !important; /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#660000', endColorstr='#aa0000',GradientType=1 ) !important; /* IE6-9 fallback on horizontal gradient */
+}
+
+#checkout_steps .done a:after {
+    background-color: #22cc00 !important;
+    background-image: -moz-linear-gradient(left top , #22cc00, #22aa00) !important;
+}
+#checkout_steps .done a {
+    background-color: #22cc00 !important;
+    background-image: -moz-linear-gradient(center top , #22cc00, #22aa00) !important;
+}
+
+#salespro h3.spr_basket_item_name a {
+    color: #999 !important;
+}
+div.spr_category_heading {
+    border-bottom: 1px solid #999 !important;
+    clear: both !important;
+    margin: 0 10px 20px 0 !important;
+    overflow: auto !important;
+}
+.spr_dl_link {
+border: 0 !important;
+}
+
+
+
+
+/* /// WIDGETS /// */
+
+/* SHOWCASE WIDGET COLOURS */
+#salespro .spr_widget_showcase_item_cell {
+    background: #f9f9f9;
+}
+#salespro .spr_widget_tint {
+    background: #fff;
+}
+#salespro .spr_widget_showcase_item_price {
+    color: #c12200;
+}
+
+#salespro .spr_widget_showcase_item_name {
+    color: #333;
+}
+
+/* /// CATEGORY CELL WIDGET /// */
+#salespro .spr_widget_item_cell, .spr_widget_category_cell {
+    border-radius: 0;
+}
+
+#salespro .spr_widget_category_name {
+    color: #999;
+    background: #000;
+}
+
+#salespro .spr_widget_category_cell:hover .spr_widget_category_name {
+    color: #fff;
+    background: #660000;
+}
+
+/* /// ITEM CELL WIDGET /// */
+#salespro .spr_widget_item_details {
+    background: #f4f3f3;
+}
+#salespro .spr_widget_item_link_holder {
+    background: #660000;
+}
+#salespro .spr_widget_item_link {
+    color: #999;
+}
+#salespro .spr_widget_item_name {
+    color: #333;
+}
+#salespro .spr_widget_item_price {
+    color: #000;
+}
+#salespro .spr_widget_item_cell:hover .spr_widget_item_link_holder, #salespro .spr_widget_item_cell:hover .spr_widget_item_link {
+    background: #660000;
+}
+
+/* /// CATEGORY LIST VIEW /// */
+#salespro .spr_widget_listitem {
+    background: #f4f3f3;
+}
+
+#salespro .spr_widget_listitem_name {
+    color: #333;
+}
+#salespro .spr_widget_listitem_desc {
+    color: #333;
+}
+
+#salespro .spr_widget_listitem_price {
+    color: #000;
+}
+#salespro .spr_widget_listitem_button {
+    background: #660000;
+    color: #999;
+}
+#salespro .spr_widget_listitem:hover .spr_widget_listitem_button {
+    background: #660000;
+}
