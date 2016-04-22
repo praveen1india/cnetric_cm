@@ -25,7 +25,17 @@ $userId    = $user->get('id');
 
 ?>
 <script type="text/javascript">
-	
+	Joomla.orderTable = function () {
+		table = document.getElementById("sortTable");
+		direction = document.getElementById("directionTable");
+		order = table.options[table.selectedIndex].value;
+		if (order != '<?php echo $listOrder; ?>') {
+			dirn = 'asc';
+		} else {
+			dirn = direction.options[direction.selectedIndex].value;
+		}
+		Joomla.tableOrdering(order, dirn, '');
+	};
 
 	jQuery(document).ready(function () {
 		jQuery('#clear-search-button').on('click', function () {
@@ -33,22 +43,6 @@ $userId    = $user->get('id');
 			jQuery('#adminForm').submit();
 		});
 	});
-	
-	function showEdit(editableObj) {
-			$(editableObj).css("background","#FFF");
-		} 
-		
-		function saveToDatabase(editableObj,langID,canEntID,desc) {
-			//$(editableObj).css("background","#FFF url(loaderIcon.gif) no-repeat right");
-			$.ajax({
-				url: "saveedit.php",
-				type: "POST",
-				data:'column='+column+'&editval='+editableObj.innerHTML+'&id='+id,
-				success: function(data){
-					$(editableObj).css("background","#FDFDFD");
-				}        
-		   });
-		}
 </script>
 
 <?php
@@ -65,19 +59,6 @@ if (!empty($this->extra_sidebar))
 	</div>
 	<div id="j-main-container" class="span10">
 	<form id="adminForm" name="adminForm" method="post" action="/projects_c/jshop/administrator/index.php?option=com_wcs_pim&view=categories" novalidate="">
-
-		
-		
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	<table class="table table-striped" id="categoryList">
 				<thead>
 				<tr>
@@ -174,14 +155,7 @@ if (!empty($this->extra_sidebar))
 					<a href="<?php echo JRoute::_('index.php?option=com_wcs_pim&view=pimproduct&layout=edit&id='.(int) $item->catentry_id); ?>">
 					<?php echo (isset($Parents->catentry_id))? ' - - - ':''; echo $this->escape($item->catentry_id); ?></a>
 				</td>
-				<td contenteditable="true" onBlur="saveToDatabase(this,'-1',<?php echo $this->escape($item->catentry_id); ?>,'<?php
-					$db = JFactory::getDbo();
-					$query ="Select * from catentdesc where catentry_id = ". $item->catentry_id." and language_id= -1";
-					$db->setQuery($query);
-					$results = $db->loadObject();
-					echo str_replace("'", "\'", $results->name); 
-					
-					?>')">
+				<td>
 
 					<?php
 					$db = JFactory::getDbo();
