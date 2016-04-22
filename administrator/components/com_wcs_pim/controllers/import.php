@@ -245,3 +245,4 @@ class Wcs_pimControllerImport extends JControllerAdmin
 	}
 
 }
+// ravi added
